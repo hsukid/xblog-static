@@ -6,7 +6,7 @@
       <span class="uk-margin-small-right" uk-icon="icon: file-edit" />
       {{ item.title }}
     </g-link>
-    <span>最近更新 {{ item.updated_at }}</span>
+    <span>最近更新 {{ day(item.updated_at) }}</span>
     <p>
       {{ item.brief }}
     </p>
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .uk-card {
   position: relative;
 }

@@ -2,7 +2,7 @@
   <Layout>
     <article class="uk-article">
       <h1 class="uk-article-title">{{ article.title }}</h1>
-      <p class="uk-article-meta">{{ article.updated_at }}</p>
+      <p class="uk-article-meta">{{ day(article.updated_at) }}</p>
       <p class="uk-text-lead">{{ article.brief }}</p>
 
       <div v-html="html(article.content)"></div>
